@@ -1,0 +1,18 @@
+- name: Deploy Dockerized Node App Locally
+  hosts: web
+  become: true
+  tasks:
+    - name: Install Docker
+      apt:
+        name: docker.io
+        state: present
+        update_cache: yes
+
+    - name: Pull latest Docker image from DockerHub
+      shell: docker pull akshayjarad/myapp:latest
+
+    - name: Run the Docker container
+      shell: |
+        docker stop myapp || true
+        docker rm myapp || true
+        docker run -d --name myapp -p 80:3000 akshayjarad/myapp:latest
