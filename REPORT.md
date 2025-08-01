@@ -11,7 +11,8 @@ However, I followed all other steps locally and simulated what Terraform would h
 ##  Step-by-Step Workflow
 
 ### 1. **Create a GitHub Repository**
-- A repo named `devops-case-study-2` was created and initialized with `README.md`.<img width="1920" height="1080" alt="Screenshot 2025-07-28 172444" src="https://github.com/user-attachments/assets/bd8bbf76-73a9-4920-99ea-dc965a4bfbdc" />
+- A repo named `devops-case-study-2` was created and initialized with `README.md`
+- .<img width="1920" height="1080" alt="Screenshot 2025-07-28 172444" src="https://github.com/user-attachments/assets/bd8bbf76-73a9-4920-99ea-dc965a4bfbdc" />
 
 ### 2. **Add Node.js Application**
 - Basic Node.js app (`index.js`) returning a "Hello from Dockerized Node.js!" message.
